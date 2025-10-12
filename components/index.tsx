@@ -13,6 +13,7 @@ import Note from "./Note";
 import Directors from "./Directors";
 import CoachingServices from "./CoachingServices";
 import Header from "./Header";
+import Footer from "./Footer";
 
 export {
   Hero,
@@ -30,4 +31,5 @@ export {
   Directors,
   CoachingServices,
   Header,
+  Footer,
 };
