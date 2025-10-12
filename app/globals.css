@@ -1,26 +1,54 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+} */
 
 @theme inline {
-  --color-background: var(--background);
+  /* --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-mono: var(--font-geist-mono); */
+  --font-roboto: var(--font-roboto);
+  --color-primary: #031273;
 
+  /* --container-center: true; */
+}
+/* @theme {
+  --container-center: true;
+} */
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+.container {
+  @apply mx-auto max-w-7xl px-4;
+}
+body {
+  /* background: var(--background); */
+  /* color: var(--foreground); */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: var(--font-roboto);
+}
+p {
+  @apply text-base font-normal text-gray-700;
+}
+h1 {
+  @apply text-2xl sm:text-3xl md:text-4xl font-bold text-primary;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+h2 {
+  @apply text-xl sm:text-2xl md:text-3xl font-bold text-primary;
+}
+
+h3 {
+  @apply text-lg sm:text-xl md:text-2xl font-bold text-primary;
+}
+
+h4 {
+  @apply text-base sm:text-lg md:text-xl font-bold text-primary;
 }
