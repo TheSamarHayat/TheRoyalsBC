@@ -41,7 +41,7 @@ export default function CoachPage({ params }: CoachPageProps) {
               />
             </div>
 
-            <div className="md:col-span-7 text-center md:text-left">
+            <div className="md:col-span-7 text-left">
               <h1 className="!text-white text-3xl md:text-4xl font-bold mb-2">
                 {coach.title}
               </h1>
@@ -53,7 +53,7 @@ export default function CoachPage({ params }: CoachPageProps) {
               </p>
 
               <div className="space-y-3">
-                <div className="flex items-center justify-center md:justify-start">
+                <div className="flex items-center justify-start">
                   <Phone className="w-5 h-5 mr-3 flex-shrink-0" />
                   <Link
                     href={`tel:${coach.phone}`}
@@ -62,7 +62,7 @@ export default function CoachPage({ params }: CoachPageProps) {
                     {coach.phone}
                   </Link>
                 </div>
-                <div className="flex items-center justify-center md:justify-start">
+                <div className="flex items-center justify-start">
                   <Mail className="w-5 h-5 mr-3 flex-shrink-0" />
                   <Link
                     href={`mailto:${coach.email}`}
@@ -71,7 +71,7 @@ export default function CoachPage({ params }: CoachPageProps) {
                     {coach.email}
                   </Link>
                 </div>
-                <div className="flex items-center justify-center md:justify-start">
+                <div className="flex items-center justify-start">
                   <MapPin className="w-5 h-5 mr-3 flex-shrink-0" />
                   <span className="!text-white text-lg">
                     East London & Greater London

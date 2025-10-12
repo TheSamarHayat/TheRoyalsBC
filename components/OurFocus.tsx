@@ -26,9 +26,9 @@ const OurFocus = () => {
   return (
     <section className="w-full py-16">
       <div className="container">
-        <div className="grid grid-cols-5 gap-8 items-center">
-          {/* Logo Section - 40% width */}
-          <div className="col-span-2 flex justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
+          {/* Logo Section - 40% width on desktop, full width on mobile */}
+          <div className="md:col-span-2 flex justify-center order-2 md:order-1">
             <Image
               src="/images/logoblue.png"
               alt="The Royals Badminton Club Logo"
@@ -38,8 +38,8 @@ const OurFocus = () => {
             />
           </div>
 
-          {/* Content Section - 60% width */}
-          <div className="col-span-3">
+          {/* Content Section - 60% width on desktop, full width on mobile */}
+          <div className="md:col-span-3 order-1 md:order-2">
             <h2 className="mb-4">Our Focus</h2>
             <ul className="space-y-4">
               {focusPoints.map((point, index) => (
