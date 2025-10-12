@@ -4,12 +4,12 @@ import { Users, Info, Target, MapPin, Calendar, Lightbulb } from "lucide-react";
 
 const CallToAction = () => {
   const actionItems = [
-    { icon: Users, text: "WHO WE ARE", href: "#" },
-    { icon: Info, text: "WHAT WE PLAY", href: "#" },
-    { icon: Target, text: "WHY WE PLAY", href: "#" },
-    { icon: MapPin, text: "WHERE WE PLAY", href: "#" },
-    { icon: Calendar, text: "WHEN WE PLAY", href: "#" },
-    { icon: Lightbulb, text: "HOW WE PLAY", href: "#" },
+    { icon: Users, text: "WHO WE ARE", href: "/who-we-are" },
+    { icon: Info, text: "WHAT WE PLAY", href: "/what-we-play" },
+    { icon: Target, text: "WHY WE PLAY", href: "/why-we-play" },
+    { icon: MapPin, text: "WHERE WE PLAY", href: "/where-we-play" },
+    { icon: Calendar, text: "WHEN WE PLAY", href: "/when-we-play" },
+    { icon: Lightbulb, text: "HOW WE PLAY", href: "/how-we-play" },
   ];
 
   return (
