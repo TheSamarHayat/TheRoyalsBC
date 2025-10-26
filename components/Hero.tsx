@@ -1,5 +1,6 @@
 import { Handshake } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
@@ -12,10 +13,13 @@ const Hero = () => {
             Dedicated to Elevating Badminton Excellence in East London with
             Passion, Diversity, Integrity, and Sportsmanship
           </p>
-          <button className="px-3 py-2 font-bold flex gap-2 bg-white text-primary rounded-md w-fit">
+          <Link
+            href="/join-us"
+            className="px-3 py-2 font-bold flex gap-2 bg-white text-primary rounded-md w-fit hover:bg-gray-100 transition-colors cursor-pointer"
+          >
             <Handshake />
             Join Us
-          </button>
+          </Link>
           <p className="!text-white">
             The Royals Badminton Club is a vibrant community for upper
             intermediate, advanced, and expert badminton players in East London

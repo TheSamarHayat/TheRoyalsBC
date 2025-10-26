@@ -81,10 +81,10 @@ export const footerData: FooterData = {
       label: "Tumblr",
     },
   ],
-  copyright: "© 2024. All Rights Reserved.",
+  copyright: `© ${getCurrentYear()}. All Rights Reserved.`,
   companyInfo: {
     name: "The Royals Badminton Club",
-    year: 2024,
+    year: getCurrentYear(),
   },
 };
 

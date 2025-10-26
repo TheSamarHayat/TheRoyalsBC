@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getCoachBySlug } from "@/lib/coachData";
-import { ArrowLeft, Phone, Mail, MapPin } from "lucide-react";
+import { FaArrowLeft, FaPhone, FaEnvelope } from "react-icons/fa6";
 
 interface CoachPageProps {
   params: Promise<{
@@ -27,7 +27,7 @@ export default async function CoachPage({ params }: CoachPageProps) {
             href="/"
             className="inline-flex items-center text-white/80 hover:text-white transition-colors mb-8"
           >
-            <ArrowLeft className="w-4 h-4 mr-2" />
+            <FaArrowLeft className="w-4 h-4 mr-2" />
             Back to Home
           </Link>
 
@@ -55,7 +55,7 @@ export default async function CoachPage({ params }: CoachPageProps) {
 
               <div className="space-y-3">
                 <div className="flex items-center justify-start">
-                  <Phone className="w-5 h-5 mr-3 flex-shrink-0" />
+                  <FaPhone className="w-5 h-5 mr-3 flex-shrink-0" />
                   <Link
                     href={`tel:${coach.phone}`}
                     className="hover:text-white/80 transition-colors !text-white text-lg"
@@ -64,19 +64,13 @@ export default async function CoachPage({ params }: CoachPageProps) {
                   </Link>
                 </div>
                 <div className="flex items-center justify-start">
-                  <Mail className="w-5 h-5 mr-3 flex-shrink-0" />
+                  <FaEnvelope className="w-5 h-5 mr-3 flex-shrink-0" />
                   <Link
                     href={`mailto:${coach.email}`}
                     className="hover:text-white/80 transition-colors !text-white text-lg"
                   >
                     {coach.email}
                   </Link>
-                </div>
-                <div className="flex items-center justify-start">
-                  <MapPin className="w-5 h-5 mr-3 flex-shrink-0" />
-                  <span className="!text-white text-lg">
-                    East London & Greater London
-                  </span>
                 </div>
               </div>
             </div>
