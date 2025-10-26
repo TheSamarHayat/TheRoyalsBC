@@ -6,13 +6,14 @@ import { getCoachBySlug } from "@/lib/coachData";
 import { ArrowLeft, Phone, Mail, MapPin } from "lucide-react";
 
 interface CoachPageProps {
-  params: {
+  params: Promise<{
     name: string;
-  };
+  }>;
 }
 
-export default function CoachPage({ params }: CoachPageProps) {
-  const coach = getCoachBySlug(params.name);
+export default async function CoachPage({ params }: CoachPageProps) {
+  const { name } = await params;
+  const coach = getCoachBySlug(name);
 
   if (!coach) {
     notFound();
