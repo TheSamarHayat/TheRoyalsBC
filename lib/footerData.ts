@@ -32,33 +32,54 @@ export const footerData: FooterData = {
   socialLinks: [
     {
       icon: "Facebook",
-      href: "https://facebook.com/theroyalsbc",
+      href: "https://www.facebook.com/bctheroyals",
       label: "Facebook",
     },
     {
       icon: "Instagram",
-      href: "https://instagram.com/theroyalsbc",
+      href: "https://www.instagram.com/theroyalsbc",
       label: "Instagram",
     },
-    { icon: "Mail", href: "mailto:info@theroyalsbc.co.uk", label: "Email" },
+    {
+      icon: "Threads",
+      href: "https://www.threads.net/@theroyalsbc",
+      label: "Threads",
+    },
     {
       icon: "Twitter",
-      href: "https://twitter.com/theroyalsbc",
-      label: "Twitter",
+      href: "https://x.com/TheRoyalsBC",
+      label: "X (Twitter)",
     },
     {
       icon: "Youtube",
       href: "https://youtube.com/@theroyalsbc",
       label: "YouTube",
     },
-    { icon: "Music", href: "https://tiktok.com/@theroyalsbc", label: "TikTok" },
     {
-      icon: "MessageCircle",
-      href: "https://medium.com/@theroyalsbc",
-      label: "Medium",
+      icon: "TikTok",
+      href: "https://www.tiktok.com/@theroyalsbc?_t=8qcQdnL42Hh&_r=1",
+      label: "TikTok",
     },
-    { icon: "Phone", href: "https://wa.me/447765813008", label: "WhatsApp" },
-    { icon: "Send", href: "https://t.me/theroyalsbc", label: "Telegram" },
+    {
+      icon: "Meetup",
+      href: "https://www.meetup.com/theroyalsbc",
+      label: "Meetup",
+    },
+    {
+      icon: "WhatsApp",
+      href: "https://chat.whatsapp.com/IBiAZO3J3UK81dJp0xpXS8",
+      label: "WhatsApp",
+    },
+    {
+      icon: "Telegram",
+      href: "https://t.me/theroyalsbc",
+      label: "Telegram",
+    },
+    {
+      icon: "Tumblr",
+      href: "https://www.tumblr.com/theroyalsbc",
+      label: "Tumblr",
+    },
   ],
   copyright: "© 2024. All Rights Reserved.",
   companyInfo: {

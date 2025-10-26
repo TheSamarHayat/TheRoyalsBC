@@ -3,31 +3,33 @@ import Link from "next/link";
 import Image from "next/image";
 import { getFooterData, getCurrentYear } from "@/lib/footerData";
 import {
-  Facebook,
-  Instagram,
-  Mail,
-  Twitter,
-  Youtube,
-  Music,
-  MessageCircle,
-  Send,
-  Phone,
-} from "lucide-react";
+  FaFacebook,
+  FaInstagram,
+  FaYoutube,
+  FaWhatsapp,
+  FaTelegram,
+  FaThreads,
+  FaXTwitter,
+  FaTiktok,
+  FaMeetup,
+  FaTumblr,
+} from "react-icons/fa6";
 
 const Footer = () => {
   const footerData = getFooterData();
 
   // Icon mapping
   const iconMap = {
-    Facebook,
-    Instagram,
-    Mail,
-    Twitter,
-    Youtube,
-    Music,
-    MessageCircle,
-    Phone,
-    Send,
+    Facebook: FaFacebook,
+    Instagram: FaInstagram,
+    Youtube: FaYoutube,
+    Threads: FaThreads,
+    Twitter: FaXTwitter,
+    TikTok: FaTiktok,
+    Meetup: FaMeetup,
+    WhatsApp: FaWhatsapp,
+    Telegram: FaTelegram,
+    Tumblr: FaTumblr,
   };
 
   return (

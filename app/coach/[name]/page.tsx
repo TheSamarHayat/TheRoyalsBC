@@ -82,10 +82,22 @@ export default function CoachPage({ params }: CoachPageProps) {
           </div>
         </div>
       </section>
+      {coach.contactInformation && (
+        <section className="!bg-white pt-16">
+          <div className="container">
+            <h2 className="text-2xl font-bold mb-6 text-gray-800">
+              Contact Information
+            </h2>
+            <p className="text-gray-600 text-lg">{coach.contactInformation}</p>
+          </div>
+        </section>
+      )}
       {coach.qualifications && coach.qualifications.length > 0 && (
         <section className="!bg-white pt-16">
           <div className="container">
-            <h2 className="mb-4">Qualifications</h2>
+            <h2 className="text-2xl font-bold mb-6 text-gray-800">
+              Qualifications
+            </h2>
             <ul className="space-y-4">
               {coach.qualifications.map((qualification, index) => (
                 <li key={index} className="flex items-center">
@@ -97,10 +109,24 @@ export default function CoachPage({ params }: CoachPageProps) {
           </div>
         </section>
       )}
+      {coach.professionalExperience && (
+        <section className="!bg-white pt-16">
+          <div className="container">
+            <h2 className="text-2xl font-bold mb-6 text-gray-800">
+              Professional Experience
+            </h2>
+            <p className="text-gray-600 leading-relaxed">
+              {coach.professionalExperience}
+            </p>
+          </div>
+        </section>
+      )}
       {coach.availability && coach.availability.length > 0 && (
         <section className="!bg-white pt-16">
           <div className="container">
-            <h2 className="mb-4">Availability</h2>
+            <h2 className="text-2xl font-bold mb-6 text-gray-800">
+              Availability
+            </h2>
             <ul className="space-y-4">
               {coach.availability.map((item, index) => (
                 <li key={index} className="flex items-center">
@@ -116,7 +142,9 @@ export default function CoachPage({ params }: CoachPageProps) {
         coach.competitiveAchievements.length > 0 && (
           <section className="!bg-white pt-16">
             <div className="container">
-              <h2 className="mb-4">Competitive Achievements</h2>
+              <h2 className="text-2xl font-bold mb-6 text-gray-800">
+                Competitive Achievements
+              </h2>
               <ul className="space-y-4">
                 {coach.competitiveAchievements.map((achievement, index) => (
                   <li key={index} className="flex items-center">
@@ -131,7 +159,9 @@ export default function CoachPage({ params }: CoachPageProps) {
       {coach.coachingPhilosophy && coach.coachingPhilosophy.length > 0 && (
         <section className="!bg-white pt-16">
           <div className="container">
-            <h2 className="mb-4">Coaching Philosophy</h2>
+            <h2 className="text-2xl font-bold mb-6 text-gray-800">
+              Coaching Philosophy
+            </h2>
             <p className="text-gray-600 mb-4">{coach.coachingPhilosophy[0]}</p>
             <ul className="space-y-4">
               {coach.coachingPhilosophy.slice(1).map((philosophy, index) => (
@@ -147,7 +177,9 @@ export default function CoachPage({ params }: CoachPageProps) {
       {coach.coachingExpertise && coach.coachingExpertise.length > 0 && (
         <section className="!bg-white pt-16">
           <div className="container">
-            <h2 className="mb-4">Coaching Expertise</h2>
+            <h2 className="text-2xl font-bold mb-6 text-gray-800">
+              Coaching Expertise
+            </h2>
             <ul className="space-y-4">
               {coach.coachingExpertise.map((expertise, index) => (
                 <li key={index} className="flex items-center">
@@ -161,8 +193,10 @@ export default function CoachPage({ params }: CoachPageProps) {
       )}
       {coach.keyQualities && coach.keyQualities.length > 0 && (
         <section className="!bg-white pt-16">
-          <div className="container">
-            <h2 className="mb-4">Key Qualities</h2>
+          <div className="container mb-8">
+            <h2 className="text-2xl font-bold mb-6 text-gray-800">
+              Key Qualities
+            </h2>
             <ul className="space-y-4">
               {coach.keyQualities.map((quality, index) => (
                 <li key={index} className="flex items-center">

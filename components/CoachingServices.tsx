@@ -1,37 +1,20 @@
 import React from "react";
 import UserCard from "./ui/UserCard";
+import { getAllCoaches } from "@/lib/coachData";
 
 const CoachingServices = () => {
-  const coaches = [
-    {
-      image: "/images/hongze.png",
-      name: "Hongze Wu",
-      position: "Coach",
-      phone: "+44 7765 813008",
-      email: "hongze@theroyalsbc.co.uk",
-      readMoreRoute: "/coach/hongze-wu",
-    },
-    {
-      image: "/images/William.png",
-      name: "William Jones",
-      position: "Coach",
-      phone: "+44 7415 250285",
-      email: "william@theroyalsbc.co.uk",
-      readMoreRoute: "/coach/william-jones",
-    },
-    {
-      image: "/images/Rohail.png",
-      name: "Rohail Haseeb",
-      position: "Coach",
-      phone: "+44 7495 954244",
-      email: "rohail@theroyalsbc.co.uk",
-      readMoreRoute: "/coach/rohail-haseeb",
-    },
-  ];
+  const coaches = getAllCoaches().map((coach) => ({
+    image: coach.image,
+    name: coach.name,
+    position: coach.position,
+    phone: coach.phone,
+    email: coach.email,
+    readMoreRoute: `/coach/${coach.slug}`,
+  }));
 
   return (
     <section className="bg-primary !text-white py-16">
-      <div className="container">
+      <div className="container text-center">
         <h2 className="mb-4 !text-white">Coaching Services</h2>
 
         <div className="mb-4 space-y-2 !text-white">
@@ -65,7 +48,7 @@ const CoachingServices = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4 mt-4">
+        <div className="flex flex-wrap justify-center gap-4 pt-4">
           {coaches.map((coach, index) => (
             <UserCard
               key={index}
