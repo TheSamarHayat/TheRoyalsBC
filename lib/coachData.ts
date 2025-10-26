@@ -26,7 +26,7 @@ export const coachesData: CoachData[] = [
     position: "Coach",
     phone: "+44 7765 813008",
     email: "hongze@theroyalsbc.co.uk",
-    image: "/images/hongze.png",
+    image: "/images/hongze.jpeg",
     title: "Coach Hongze Wu (David)",
     subtitle: "Gold Medalist Badminton Coach (China)",
     description:
@@ -113,7 +113,7 @@ export const coachesData: CoachData[] = [
     position: "Coach",
     phone: "+44 7495 954244",
     email: "rohail@theroyalsbc.co.uk",
-    image: "/images/Rohail.png",
+    image: "/images/Rohail.jpeg",
     title: "Coach Rohail Haseeb",
     subtitle: "Certified Coach by the Pakistan Badminton Federation",
     description:
