@@ -1,15 +1,26 @@
 import React from "react";
 import Link from "next/link";
-import { Users, Info, Target, MapPin, Calendar, Lightbulb } from "lucide-react";
+import {
+  FaUsers,
+  FaCircleInfo,
+  FaBullseye,
+  FaLocationDot,
+  FaCalendar,
+  FaLightbulb,
+} from "react-icons/fa6";
 
 const CallToAction = () => {
   const actionItems = [
-    { icon: Users, text: "WHO WE ARE", href: "/who-we-are" },
-    { icon: Info, text: "WHAT WE PLAY", href: "/what-we-play" },
-    { icon: Target, text: "WHY WE PLAY", href: "/why-we-play" },
-    { icon: MapPin, text: "WHERE WE PLAY", href: "/where-we-play" },
-    { icon: Calendar, text: "WHEN WE PLAY", href: "/when-we-play" },
-    { icon: Lightbulb, text: "HOW WE PLAY", href: "/how-we-play" },
+    { icon: FaUsers, text: "WHO WE ARE", href: "/club/who-we-are" },
+    { icon: FaCircleInfo, text: "WHAT WE PLAY", href: "/club/what-we-play" },
+    { icon: FaBullseye, text: "WHY WE PLAY", href: "/club/why-we-play" },
+    {
+      icon: FaLocationDot,
+      text: "WHERE WE PLAY",
+      href: "/club/where-we-play",
+    },
+    { icon: FaCalendar, text: "WHEN WE PLAY", href: "/club/when-we-play" },
+    { icon: FaLightbulb, text: "HOW WE PLAY", href: "/club/how-we-play" },
   ];
 
   return (
